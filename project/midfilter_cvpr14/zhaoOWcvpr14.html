@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="keywords" content="Rui Zhao, Rui Zhao, 赵瑞, EE, USTC, CUHK, The Chinese University of Hong Kong, University of Science and Technology of China" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="../project.css" type="text/css" />
+<link rel="shortcut icon" href="rui.ico">
+<title>Learning Mid-level Filters for Person Re-identification</title>
+</head>
+<body>
+<div id="layout-content">
+<p>
+
+<script type="text/javascript">
+<!--
+// Toggle Display of BibTeX
+function toggleBibtex(articleid) {
+  var bib = document.getElementById(articleid);
+  // Toggle 
+    if(bib.style.display == "none") {
+      bib.style.display = "";
+    }
+    else {
+      bib.style.display = "none";
+    }
+}
+-->
+</script>
+
+<h1 align="center"><a href="http://www.ee.cuhk.edu.hk/~rzhao/project/zhaoOWcvpr14.html">Learning Mid-level Filters for Person Re-identification</a></h1>
+
+<div id="toptitle">
+<h5 align="center">
+  <a href="http://www.ee.cuhk.edu.hk/~rzhao">Rui Zhao</a>  &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.ee.cuhk.edu.hk/~wlouyang">Wanli Ouyang</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.ee.cuhk.edu.hk/~xgwang">Xiaogang Wang</a>
+  <br />
+  <br />
+  <a href="http://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong</a>
+</h5>
+
+<br />
+<p align="center">
+<img src="zhaoOWcvpr14_intro1.png" alt="intro figure 1" width="480px" height="HEIGHTpx"/>
+</p>
+<p style="font-size:14px">
+Figure 1. Three types of patches with different discriminative and generalization powers. Each dashed box indicates a patch cluster. To make filters region-specific, we cluster patches within the same
+horizontal stripe across different pedestrian images. See details in the text of Section 1 of our paper. </p>
+
+<p align="center">
+<img src="zhaoOWcvpr14_intro2.png" alt="intro figure 1" width="480px" height="HEIGHTpx"/>
+</p>
+<p style="font-size:14px">
+Figure 2. Filter in (a1 )(b1 ) is learned from a cluster with incoherent appearance and generates scattered responses in the two images. Filter in (a2)(b2) is learned from a cluster with coherent appearance. It generates compact responses. It also has view-invariance. It matches (a2) and (b2) which are the same person in different views, while distinguishes (b2) and (b'2) which are different person in the same view. </p>
+
+<h2>Abstract</h2>
+<hr>
+<p style="font-size:16px">
+In this paper, we propose a novel approach of learning mid-level filters from automatically discovered patch clusters for person re-identification. It is well motivated by our study on what are good filters for person re-identification. Our mid-level filters are discriminatively learned for identifying specific visual patterns and distinguishing persons, and have good cross-view invariance. First, local patches are qualitatively measured and classified with their discriminative power. Discriminative and representative patches are collected for filter learning. Second, patch clusters with coherent appearance are obtained by pruning hierarchical clustering trees, and a simple but effective cross-view training strategy is proposed to learn filters that are view-invariant and discriminative. Third, filter responses are integrated with patch matching scores in RankSVM training. The effectiveness of our approach is validated on the VIPeR dataset and the CUHK Campus dataset. The learned mid-level features are complementary to existing handcrafted low-level features, and improve the best Rank-1 matching rate on the VIPeR dataset by 14%.
+</p>
+
+<h2>Papers</h2>
+<hr>
+<ul>
+<li>
+<a href="">Learning Mid-level Filters for Person Re-Identfiation, </a> <br />
+<b>R. Zhao</b>, W. Ouyang and X. Wang. <br />
+<i>IEEE CVPR </i>, 2014. (Acceptance rate: 29.8%)<br />
+[<a href="zhaoOWcvpr14.pdf">PDF</a>]
+[<a href="javascript:toggleBibtex('zhaoOWcvpr14')" target="_self">Bibtex</a>]
+[<a href="zhaoOWcvpr14.html">Project Page</a>]
+[<a href="zhaoOWcvpr14_poster.pdf">Poster</a>]
+</li>
+
+<div class="blockcontent" id="zhaoOWcvpr14" style="display:none"> 
+<pre>
+@inproceedings{zhao2014learning,
+ title = {Learning Mid-level Filters for Person Re-identfiation},
+ author={Zhao, Rui and Ouyang, Wanli and Wang, Xiaogang},
+ booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+ year = {2014},
+ month = {June},
+ address = {Columbus, USA}
+}
+</pre>
+</div>
+
+</ul>
+
+
+<h2>Spotlight</h2>
+<hr>
+<p align="center">
+<object width="425" height="320">
+<param name="movie" value="http://www.youtube.com/v/9Y4hBy9LsMM" />
+<embed src="http://www.youtube.com/v/9Y4hBy9LsMM"
+  type="application/x-shockwave-flash" width="425" height="320" />
+</object> 
+<object width="425" height="320">
+<param name="movie" value="http://player.youku.com/player.php/sid/XNzI0Nzg0MzQw/v.swf" />
+<embed src="http://player.youku.com/player.php/sid/XNzI0Nzg0MzQw/v.swf"
+  type="application/x-shockwave-flash" width="425" height="320" />
+</object>
+</p>
+
+
+<h2>Highlights</h2>
+<hr>
+<ul>
+<li>
+	<p style="font-size:18px">A novel measurement called partial AUC (pAUC) score is proposed to quantify the discriminative power in person re-identification for image patches.</p>
+
+	<p align="center">
+	<img src="zhaoOWcvpr14_pAUC.png" alt="intro figure 3" width="WIDTHpx" height="250px"
+	/>
+	</p>
+	<p style="font-size:14px">
+	Figure 3. (a): Each curve represents the sorted distances between a patch and patches in its nearest-neighbor set, and pAUC score is computed by accumulating patch matching distances with the Np closest nearest neighbors, as the black arrows indicated. Different color indicates different pAUC level. (b): Example patches are randomly sampled from each pAUC level for illustration, patches in low pAUC levels are monochromatic and frequently seen, while those in high pAUC levels are varicolored and less frequently appeared. Clearly the examples show the effectiveness of the pAUC score in quantifying the discriminative power. </p>
+</li>
+
+<li>
+	<p style="font-size:18px">Coherent patch clusters are obtained by pruning hierarchical clustering trees. </p>
+	<p align="center">
+	<img src="zhaoOWcvpr14_htree.png" alt="intro figure 4" width="WIDTHpx" height="400px"
+	/>
+	</p>
+	<p style="font-size:14px">
+	Figure 4. Illustration of hierarchical clustering tree structure, and examples of cluster nodes. As shown in the dashed box, patches in a parent node is divided into Ot = 4 children nodes, and shallow nodes (in black color) are decomposed into deep nodes (in blue color) in hierarchical clustering. The shallow nodes represent coarse clusters while the deep nodes denote finer clusters. Shallow nodes contain patches with different color and texture patterns while the patch patterns in the deep nodes are more coherent. </p>
+</li>
+
+<li>
+	<p style="font-size:18px">A simple but effective cross-view training strategy is propose to learn filters that are view invariant and discriminative in distinguishing identities</p>
+	<p align="center">
+	<img src="zhaoOWcvpr14_crosstrn.png" alt="intro figure 5" width="WIDTHpx" height="250px"/>
+	</p>
+	<p style="font-size:14px">
+	Figure 5. Scheme of learning view invariant and discriminative filters. Patches in red boxes are matched patches from images of the same person, while those in blue boxes are matched patches in most confusing images. Bottom right is the probability distribution for sampling auxiliary negative samples. </p>
+
+</li>
+
+</ul>
+
+<h2>Downloads</h2>
+<hr>
+<ul>
+<!-- <li>
+  <p>
+<a href="https://github.com/Robert0812/midlevel_filter">Midlevel_Filters</a>: Matlab code for learning mid-level filters for person re-identification. 
+</p>
+</li> -->
+<li>
+  <p>
+    <a href="https://github.com/Robert0812/dense_feat">dense_feat</a> : MATLAB package of dense color histogram and SIFT feature extraction.
+    </p>
+</li>
+<li>
+  <p>
+    <a href="./zhaoOWcvpr14_cmc.tar.gz">CMC</a> : CMC curves on both the VIPeR dataset and the CUHK01 dataset.
+    </p>
+</li>
+<li>
+	<p>
+		<a href="https://github.com/Robert0812/midfilter_reid">Code</a> : Matlab Code with demo for the CUHK01 dataset. 
+	</p>
+</li>
+</ul>
+
+<h2>Reference</h2>
+<hr>
+<ul>
+
+<li>
+	<p style="font-size:14px">Person Re-Identification: System Design and Evaluation Overview. X. Wang, and R. Zhao. Person Re-identification, Springer 2014.
+	</p>
+</li>
+
+
+<li>
+	<p style="font-size:14px">Learning Mid-level Filters for Person Re-identification. R. Zhao, W. Ouyang, and X. Wang. CVPR 2014.
+	</p>
+</li>
+
+<li>
+	<p style="font-size:14px">DeepReid: Deep Filter Pairing Neural Network for Person Re-identification. W. Li, R. Zhao, T. Xiao, and X. Wang. CVPR 2014.
+	</p>
+</li>
+
+<li>
+	<p style="font-size:14px">Person Re-identification by Salience Matching. R. Zhao, W. Ouyang, and X. Wang. ICCV 2013.
+	</p>
+</li>
+
+<li>
+	<p style="font-size:14px">Unsupervised Salience Learning for Person Re-identification. R. Zhao, W. Ouyang, and X. Wang. CVPR 2013.
+	</p>
+</li>
+
+<li>
+	<p style="font-size:14px">Human Re-identification with Transferred Metric Learning. W. Li, R. Zhao, and X. Wang. ACCV 2012.
+	</p>
+</li>
+
+</ul>	
+
+
+
+
+</body>
+</html>
