@@ -106,6 +106,31 @@ section ul {
   font-weight: inherit;
 }
 
+/* ── Professional Activity (adjunct two-line align) ── */
+.activity-adjunct {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.35em;
+  row-gap: 0;
+  margin-bottom: 6px;
+  align-items: start;
+}
+
+.activity-adjunct strong {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.activity-adjunct-line1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.activity-adjunct-line2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
 /* ── News ── */
 .news-list {
   list-style: none;
