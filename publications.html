@@ -1,743 +1,811 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Publications</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Publications — Rui Zhao</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="shortcut icon" href="figures/25231.png" />
 </head>
 <body>
-<div id="layout-content">
-<div id="toptitle">
-<h1>Publications</h1>
-<div id="subtitle">
-</div>
-</div>
-
-<script type="text/javascript">
-<!--
-// Toggle Display of BibTeX
-function toggleBibtex(articleid) {
-  var bib = document.getElementById(articleid);
-  // Toggle 
-    if(bib.style.display == "none") {
-      bib.style.display = "";
-    }
-    else {
-      bib.style.display = "none";
-    }
-}
--->
-</script>
-
-<p><a href="./">Go back to Rui's homepage</a></p>
-
-<h2>Journal</h2>
-
-<ul>
-
-<li>
-<a href="">Person Re-Identification by Saliency Learning, </a> <br />
-<b>R. Zhao</b>, W. Ouyang, X. Wang. <br />
-<i>IEEE Transactions on Pattern Analysis and Machine Intelligence</i> (<b>T-PAMI</b>), vol. 39, no. 2, pp. 356-370, March 2016. (Impact factor: 5.781) <br />
-</li>
-[<a href="project/person_tpami16/zhaoOWtpami16.pdf">PDF</a>]
-[<a href="javascript:toggleBibtex('zhaoOWtpami16_abstract')" target="_self">Abstract</a>]
-[<a href="javascript:toggleBibtex('zhaoOWtpami16')" target="_self">Bibtex</a>] 
-[<a href="">DOI</a>]
-
-<div class="blockcontent" id="zhaoOWtpami16_abstract" style="display:none"> 
-  <table class="imgtable">
-    <tr>
-      <td><a href="project/person_tpami16/zhaoOWtpami16.pdf"><img src="project/person_tpami16/zhaoOWtpami16.jpg" alt="alt text" width="200px" height="HEIGHTpx"/></a></td>
-      <td><p style="font-size:16px">
-          Human eyes can recognize person identities based on small salient regions, i.e. person saliency is distinctive and reliable  in pedestrian matching across disjoint camera views. However, such valuable  information is often hidden when computing similarities of pedestrian images with existing approaches. Inspired by our user study result of human perception on person saliency, we propose a novel perspective for person re-identification based on learning person saliency and matching saliency distribution. The proposed saliency learning and matching framework consists of four steps: (1) To handle misalignment caused by drastic viewpoint change and pose variations, we apply adjacency constrained patch matching to build dense correspondence between image pairs. (2) We propose two alternative methods, i.e. K-Nearest Neighbors and One-class SVM, to estimate a saliency score for each image patch, through which distinctive features stand out without using identity labels in the training procedure. (3) saliency matching is proposed based on patch matching. Matching patches with inconsistent saliency brings penalty, and images of the same identity are recognized by minimizing the saliency matching cost. (4) Furthermore, saliency matching is tightly integrated with patch matching in a unified structural RankSVM learning framework. The effectiveness of our approach is validated on the four public datasets. Our approach outperforms the state-of-the-art person re-identification methods on all these datasets.
-      </p></td>
-    </tr>
-  </table>
-</div>
-
-<div class="blockcontent" id="zhaoOWtpami16" style="display:none"> 
-<pre>
-@inproceedings{zhao2016person,
- title = {Person Re-Identification by Saliency Learning},
- author={Zhao, Rui Ouyang, Wanli and Wang, Xiaogang},
- booktitle = {IEEE Transaction on Pattern Analysis and Machine Intelligence (T-PAMI)},
- year = {2016}
-}
-</pre>
-</div>
-
-
-<br /><br />
-
-<li>
-<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6478825">Counting Vehicles from Semantic Regions, </a> <br />
-<b>R. Zhao</b>, X. Wang. <br />
-<i>IEEE Transactions on Intelligent Transportation Systems</i> (<b>T-ITS</b>), vol. 14, no. 2, pp. 1016-1022, March 2013. (Impact factor: 3.452) <br />
-</li>
-[<a href="project/vehicle_tits13/zhaoWtits13.pdf">PDF</a>]
-[<a href="javascript:toggleBibtex('zhaoWtits13_abstract')" target="_self">Abstract</a>]
-[<a href="javascript:toggleBibtex('zhaoWtits13')" target="_self">Bibtex</a>] 
-[<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6478825">DOI</a>]
-
-<div class="blockcontent" id="zhaoWtits13_abstract" style="display:none"> 
-  <table class="imgtable">
-    <tr>
-      <td><a href="project/vehicle_tits13/zhaoWtits13.pdf"><img src="project/vehicle_tits13/zhaoWtits13.jpg" alt="alt text" width="200px" height="HEIGHTpx"/></a></td>
-      <td><p style="font-size:16px">
-          Automatically counting vehicles in complex trafﬁc scenes from videos is challenging. Detection and tracking algorithms may fail due to occlusions, scene clutters, and large variations of viewpoints and vehicle types. We propose a new approach of counting vehicles through exploiting contextual regularities from scene structures. It breaks the problem into simpler problems, which count vehicles on each path separately. The model of each path and its source and sink add strong regularization on the motion and the sizes of vehicles and can thus signiﬁcantly improve the accuracy of vehicle counting. Our approach is based on tracking and clustering feature points and can be summarized in threefold. First, an algorithm is proposed to automatically learn the models of scene structures. A trafﬁc scene is segmented into local semantic regions by exploiting the temporal cooccurrence of local motions. Local semantic regions are connected into global complete paths using the proposed fast marching algorithm. Sources and sinks are estimated from the models of semantic regions. Second, an algorithm is proposed to cluster trajectories of feature points into objects and to estimate average vehicle sizes at different locations from initial clustering results. Third, trajectories of features points are often fragmented due to occlusions. By integrating the spatiotemporal features of trajectory clusters with contextual models of paths and sources and sinks, trajectory clusters are assigned into different paths and connected into complete trajectories. Experimental results on a complex trafﬁc scene show the effectiveness of our approach.
-      </p></td>
-    </tr>
-  </table>
-</div>
-
-<div class="blockcontent" id="zhaoWtits13" style="display:none"> 
-<pre>
-@inproceedings{zhao2013counting,
- title = {Counting Vehicles from Semantic Regions},
- author={Zhao, Rui and Wang, Xiaogang},
- booktitle = {IEEE Transaction on Intelligent Transportation Systems (T-ITS)},
- year = {2013}
-}
-</pre>
-</div>
-
-
-</ul>
-
-<h2>Book Chapter</h2>
-
-<ul>
-
-<li>
-<a href="http://link.springer.com/chapter/10.1007/978-1-4471-6296-4_17"> Person Re-Identification: System Design and Evaluation Overview, </a> <br />
-X. Wang, <b>R. Zhao</b>. <br />
-<i>Chapter in Book:</i> <b>Person Re-identification</b> , edited by Shaogang Gong, Marco Cristani, Shuicheng Yan, and Chen Change Loy, published by Springer 2014. <br />
-</li>
-[<a href="javascript:toggleBibtex('WangZspringer14_abstract')" target="_self">Abstract</a>]
-[<a href="javascript:toggleBibtex('WangZspringer14')" target="_self">Bibtex</a>]
-[<a href="http://link.springer.com/chapter/10.1007/978-1-4471-6296-4_17">DOI</a>]
-<div class="blockcontent" id="WangZspringer14_abstract" style="display:none"> 
-  <table class="imgtable">
-    <tr>
-      <td><a href="project/reid_springer14/WangZspringer14.png"><img src="project/reid_springer14/WangZspringer14.png" alt="alt text" width="160px" height="HEIGHTpx"/></a></td>
-      <td><p style="font-size:16px">
-          Person re-identification has important applications in video surveillance. It is particularly challenging because observed pedestrians undergo significant variations across camera views, and there are a large number of pedestrians to be distinguished given small pedestrian images from surveillance videos. This chapter discusses different approaches of improving the key components of a person re-identification system, including feature design, feature learning, and metric learning, as well as their strength and weakness. It provides an overview of various person re-identification systems and their evaluation on benchmark datasets. Multiple benchmark datasets for person re-identification are summarized and discussed. The performance of some state-of-the-art person identification approaches on benchmark datasets is compared and analyzed. It also discusses a few future research directions on improving benchmark datasets, evaluation methodology, and system design.
-      </p></td>
-    </tr>
-  </table>
-</div>
-
-<div class="blockcontent" id="WangZspringer14" style="display:none"> 
-<pre>
-@inproceedings{wang2014person,
- title = {Person Re-identification: System Design and Evaluation Overview},
- author={Wang, Xiaogang and Zhao, Rui},
- booktitle={Person Re-Identification},
- pages={351--370},
- year={2014},
- publisher={Springer}
-}
-</pre>
-</div>
-
-</ul>
-
-
-<h2>Preprint</h2>
-
-<ul>
-<li>
-<a href="http://arxiv.org/abs/1412.1908"> Person Re-identification by Saliency Learning, </a> <br />
-<b>R. Zhao</b>, W. Ouyang, X. Wang <br />
-<i>Preprint </i>, arXiv:1412.1908, 2014. <br />
-</li>
-[<a href="http://arxiv.org/pdf/1412.1908v1.pdf">PDF</a>]
-[<a href="javascript:toggleBibtex('ZhaoOWarxiv_abstract')" target="_self">Abstract</a>]
-[<a href="javascript:toggleBibtex('ZhaoOWarxiv')" target="_self">Bibtex</a>]
-[<a href="http://arxiv.org/abs/1412.1908">DOI</a>]
-<div class="blockcontent" id="ZhaoOWarxiv_abstract" style="display:none"> 
-  <table class="imgtable">
-    <tr>
-      
-      <tr><p style="font-size:16px">
-          Human eyes can recognize person identities based on small salient regions, i.e. human saliency is distinctive and reliable in pedestrian matching across disjoint camera views. However, such valuable information is often hidden when computing similarities of pedestrian images with existing approaches. Inspired by our user study result of human perception on human saliency, we propose a novel perspective for person re-identification based on learning human saliency and matching saliency distribution. The proposed saliency learning and matching framework consists of four steps: (1) To handle misalignment caused by drastic viewpoint change and pose variations, we apply adjacency constrained patch matching to build dense correspondence between image pairs. (2) We propose two alternative methods, i.e. K-Nearest Neighbors and One-class SVM, to estimate a saliency score for each image patch, through which distinctive features stand out without using identity labels in the training procedure. (3) saliency matching is proposed based on patch matching. Matching patches with inconsistent saliency brings penalty, and images of the same identity are recognized by minimizing the saliency matching cost. (4) Furthermore, saliency matching is tightly integrated with patch matching in a unified structural RankSVM learning framework. The effectiveness of our approach is validated on the VIPeR dataset and the CUHK01 dataset. Our approach outperforms the state-of-the-art person re-identification methods on both datasets.
-      </p></tr>
-      <tr><a href="project/reidjrnl_pami15/ZhaoOWarxiv.png"><img src="project/reidjrnl_pami15/ZhaoOWarxiv.png" alt="alt text" width="600px" height="HEIGHTpx"/></a></tr>
-    </tr>
-  </table>
-</div>
-
-<div class="blockcontent" id="ZhaoOWarxiv" style="display:none"> 
-<pre>
-@inproceedings{zhao2014person,
- title = {Person Re-identification by Saliency Learning},
- author={Zhao, Rui and Ouyang, Wanli and Wang, Xiaogang},
- booktitle={arXiv:1412.1908},
- year={2014}
-}
-</pre>
-</div>
-<br /><br />
-
-<li>
-<a href="http://arxiv.org/abs/1412.4526"> Highly Efﬁcient Forward and Backward Propagation of Convolutional Neural
-Networks for Pixelwise Classiﬁcation, </a> <br />
-H. Li, <b>R. Zhao</b>, and X. Wang <br />
-<i>Preprint </i>, arXiv:1412.4526, 2014. <br />
-</li>
-[<a href="http://arxiv.org/pdf/1412.4526v2.pdf">PDF</a>]
-[<a href="javascript:toggleBibtex('LiZWarxiv_abstract')" target="_self">Abstract</a>]
-[<a href="javascript:toggleBibtex('LiZWarxiv')" target="_self">Bibtex</a>]
-[<a href="http://arxiv.org/abs/1412.4526">DOI</a>]
-<div class="blockcontent" id="LiZWarxiv_abstract" style="display:none"> 
-  <table class="imgtable">
-    <tr>
-      
-      <tr><p style="font-size:16px">
-          We present highly efficient algorithms for performing forward and backward propagation of Convolutional Neural Network (CNN) for pixelwise classification on images. For pixelwise classification tasks, such as image segmentation and object detection, surrounding image patches are fed into CNN for predicting the classes of centered pixels via forward propagation and for updating CNN parameters via backward propagation. However, forward and backward propagation was originally designed for whole-image classification. Directly applying it to pixelwise classification in a patch-by-patch scanning manner is extremely inefficient, because surrounding patches of pixels have large overlaps, which lead to a lot of redundant computation. 
-          The proposed algorithms eliminate all the redundant computation in convolution and pooling on images by introducing novel d-regularly sparse kernels. It generates exactly the same results as those by patch-by-patch scanning. Convolution and pooling operations with such kernels are able to continuously access memory and can run efficiently on GPUs. A fraction of patches of interest can be chosen from each training image for backward propagation by applying a mask to the error map at the last CNN layer. Its computation complexity is constant with respect to the number of patches sampled from the image. Experiments have shown that our proposed algorithms speed up commonly used patch-by-patch scanning over 1500 times in both forward and backward propagation. The speedup increases with the sizes of images and patches.
-      </p></tr>
-
-      <tr><a href="project/conv_cvpr15/LiZWarxiv.png"><img src="project/conv_cvpr15/LiZWarxiv.png" alt="alt text" width="600px" height="HEIGHTpx"/></a></tr>
-    </tr>
-  </table>
-</div>
-
-<div class="blockcontent" id="LiZWarxiv" style="display:none"> 
-<pre>
-@inproceedings{li2015high,
- title = {Highly Efﬁcient Forward and Backward Propagation of Convolutional Neural
-          Networks for Pixelwise Classiﬁcation},
- author={Li, Hongsheng and Zhao, Rui and Wang, Xiaogang},
- booktitle={arXiv:1412.4526},
- year={2015}
-}
-</pre>
-</div>
-
-</ul>
-
-
-<h2>Conference</h2>
-
-<ul>
-
-<li>
-<a href="">Continual Representation Learning for Biometric Identification, </a> <br />
-Bo Zhao, Shixiang Tang, Dapeng Chen, Hakan Bilen, <b>Rui Zhao</b>, <br />
-<i>Winter Conference on Applications of Computer Vision </i> (<b>WACV</b>), 2021. <br />
-</li>
-<br />
-
-<li>
-<a href="">Self-paced Contrastive Learning with Hybrid Memory for Domain Adaptive Object Re-ID, </a> <br />
-Yixiao Ge, Feng Zhu, Dapeng Chen, <b>Rui Zhao</b>, Hongsheng Li, <br />
-<i>Conference on Neural Information Processing Systems </i> (<b>NeurIPS</b>), 2020. <br />
-</li>
-<br />
-
-
-<li>
-<a href="">Self-supervising Fine-grained Region Similarities for Large-scale Image Localization, </a> <br />
-Yixiao Ge, Haibo Wang, Feng Zhu, <b>Rui Zhao</b>, Hongsheng Li, <br />
-<i>European Conference on Computer Vision </i> (<b>ECCV</b>), 2020. <br />
-</li>
-<br />
-
-<li>
-<a href="">RBF-Softmax: Learning Deep Representative Prototypes with Radial Basis Function Softmax, </a> <br />
-Xiao Zhang, <b>Rui Zhao</b>, Yu Qiao, Hongsheng Li, <br />
-<i>European Conference on Computer Vision </i> (<b>ECCV</b>), 2020. <br />
-</li>
-<br />
-
-<li>
-<a href="">Structured Domain Adaptation for Unsupervised Person Re-identification, </a> <br />
-Yixiao Ge, Feng Zhu, <b>Rui Zhao</b>, Hongsheng Li, <br />
-<i>arXiv:2003.06650</i>, 2020. <br />
-</li>
-<br />
-
-<li>
-<a href="">COCAS: A Large-Scale Clothes Changing Person Dataset for Re-identification, </a> <br />
-Shijie Yu, Shihua Li, Dapeng Chen, <b>Rui Zhao</b>, Junjie Yan, Yu Qiao, <br />
-<i>IEEE International Conference on Computer Vision and Pattern Recognition </i> (<b>CVPR</b>), 2020. (Acceptance rate: 22%) <br />
-</li>
-<br />
-
-<li>
-<a href="">Density-Aware Feature Embedding for Face Clustering, </a> <br />
-Senhui Guo, Jing Xu, Dapeng Chen, Chao Zhang, Xiaogang Wang, <b>Rui Zhao</b><br />
-<i>IEEE International Conference on Computer Vision and Pattern Recognition </i> (<b>CVPR</b>), 2020. (Acceptance rate: 22%) <br />
-</li>
-<br />
-
-<li>
-<a href=""> Learning to Cluster Faces via Confidence and Connectivity Estimation, </a> <br />
-Lei Yang, Dapeng Chen, Xiaohang Zhan, <b>Rui Zhao</b>, Chen Change Loy, Dahua Lin<br />
-<i>IEEE International Conference on Computer Vision and Pattern Recognition </i> (<b>CVPR</b>), 2020. (Acceptance rate: 22%) <br />
-</li>
-<br />
-
-<li>
-<a href=""> Memory-Based Neighbourhood Embedding for Visual Recognition, </a> <br />
-Suichan Li, Dapeng Chen, Bin Liu, Nenghai Yu, <b>Rui Zhao</b> <br />
-<i>IEEE International Conference on Computer Vision </i> (<b>ICCV</b>), 2019. (Acceptance rate: 25%) <br />
-</li>
-[<a href="https://arxiv.org/pdf/1908.04992">PDF</a>]
-[<a href="javascript:toggleBibtex('LiCLYZiccv19_abstract')" target="_self">Abstract</a>]
-<div class="blockcontent" id="LiCLYZiccv19_abstract" style="display:none"> 
-  <table class="imgtable">
-    <tr>
-      <tr><p style="font-size:16px">
-          Learning discriminative image feature embeddings is of great importance to visual recognition. To achieve better feature embeddings, most current methods focus on designing different network structures or loss functions, and the estimated feature embeddings are usually only related to the input images. In this paper, we propose Memory-based Neighbourhood Embedding (MNE) to enhance a general CNN feature by considering its neighbourhood. The method aims to solve two critical problems, ie, how to acquire more relevant neighbours in the network training and how to aggregate the neighbourhood information for a more discriminative embedding. We first augment an episodic memory module into the network, which can provide more relevant neighbours for both training and testing. Then the neighbours are organized in a tree graph with the target instance as the root node. The neighbourhood information is gradually aggregated to the root node in a bottom-up manner, and aggregation weights are supervised by the class relationships between the nodes. We apply MNE on image search and few shot learning tasks. Extensive ablation studies demonstrate the effectiveness of each component, and our method significantly outperforms the state-of-the-art approaches.
-      </p></tr>
-      <tr><a href="project/gcnmemo_iccv19/LiCLYZiccv19.png"><img src="project/gcnmemo_iccv19/LiCLYZiccv19.png" alt="alt text" width="450px" height="HEIGHTpx"/></a></tr>
-    </tr>
-  </table>
-</div>
-<br /><br />
-
-
-<li>
-<a href=""> AdaScale: Adaptively Scaling Cosine Logits for Effectively Learning Deep Face Representations, </a> <br />
-X. Zhang, <b>R. Zhao</b>, Y. Qiao, X. Wang , H. Li <br />
-<i>IEEE International Conference on Computer Vision and Pattern Recognition </i> (<b>CVPR</b>), 2019. (Acceptance rate: 25.2%) <br />
-</li>
-[<a href="">PDF</a>]
-[<a href="javascript:toggleBibtex('ZhangZQWLcvpr19_abstract')" target="_self">Abstract</a>]
-[<a href="javascript:toggleBibtex('ZhangZQWLcvpr19')" target="_self">Bibtex</a>]
-<div class="blockcontent" id="ZhangZQWLcvpr19_abstract" style="display:none"> 
-  <table class="imgtable">
-    <tr>
-      <tr><p style="font-size:16px">
-          Coming soon.
-      </p></tr>
-      <tr><a href="project/adascale_cvpr19/ZhangZQWLcvpr19.png"><img src="project/adascale_cvpr19/ZhangZQWLcvpr19.png" alt="alt text" width="450px" height="HEIGHTpx"/></a></tr>
-    </tr>
-  </table>
-</div>
-
-<div class="blockcontent" id="ZhangZQWLcvpr19_abstract" style="display:none"> 
-<pre>
-@inproceedings{zhang2019p2sgrad,
- title = {AdaScale: Adaptively Scaling Cosine Logits for Effectively Learning Deep Face Representations},
- author={Zhang, Xiao and Zhao, Rui and Qiao, Yu and Wang, Xiaogang and Li, Hongsheng},
- booktitle={CVPR},
- year={2019}
-}
-</pre>
-</div>
-<br /><br />
-
-
-<li>
-<a href=""> P2SGrad: Refined Gradients for Optimizing Deep Face Models, </a> <br />
-X. Zhang, <b>R. Zhao</b>, J. Yan, M. Gao , Y. Qiao, X. Wang, H. Li <br />
-<i>IEEE International Conference on Computer Vision and Pattern Recognition </i> (<b>CVPR</b>), 2019. (Acceptance rate: 25.2%) <br />
-</li>
-[<a href="">PDF</a>]
-[<a href="javascript:toggleBibtex('ZhangZYGQLcvpr19_abstract')" target="_self">Abstract</a>]
-[<a href="javascript:toggleBibtex('ZhangZYGQLcvpr19')" target="_self">Bibtex</a>]
-<div class="blockcontent" id="ZhangZYGQLcvpr19_abstract" style="display:none"> 
-  <table class="imgtable">
-    <tr>
-      <tr><p style="font-size:16px">
-          Coming soon.
-      </p></tr>
-      <tr><a href="project/p2sgrad_cvpr18/ZhangZYGQLcvpr19.png"><img src="project/p2sgrad_cvpr19/ZhangZYGQLcvpr19.png" alt="alt text" width="450px" height="HEIGHTpx"/></a></tr>
-    </tr>
-  </table>
-</div>
-
-<div class="blockcontent" id="ZhangZYGQLcvpr19_abstract" style="display:none"> 
-<pre>
-@inproceedings{zhang2019p2sgrad,
- title = {P2SGrad: Refined Gradients for Optimizing Deep Face Models},
- author={Zhang, Xiao and Zhao, Rui and Yan, Junjie and Gao, Mengya and Qiao, Yu and Wang, Xiaogang and Li, Hongsheng},
- booktitle={CVPR},
- year={2019}
-}
-</pre>
-</div>
-<br /><br />
-
-
-<li>
-<a href=""> Attention-Aware Compositional Network for Person Re-identification, </a> <br />
-J. Xu, <b>R. Zhao</b>, F. Zhu, H. Wang, W. Ouyang <br />
-<i>IEEE International Conference on Computer Vision and Pattern Recognition </i> (<b>CVPR</b>), 2018. (Acceptance rate: 28.4%) <br />
-</li>
-[<a href="project/aacn_cvpr18/XuZZWOcvpr18.pdf">PDF</a>]
-[<a href="javascript:toggleBibtex('XuZZWOcvpr18_abstract')" target="_self">Abstract</a>]
-[<a href="javascript:toggleBibtex('XuZZWOcvpr18')" target="_self">Bibtex</a>]
-[<a href="">Code</a>]
-[<a href="project/aacn_cvpr18/XuZZWOcvpr18.html">Supplementary Material</a>]
-[<a href="figures/coming_soon.jpg">Poster</a>]
-<!-- [<a href="project/deepsal_cvpr15/zhaoOLWcvpr15.html">Project Page</a>] -->
-[<a href="figures/coming_soon.jpg">DOI</a>]
-<div class="blockcontent" id="XuZZWOcvpr18_abstract" style="display:none"> 
-  <table class="imgtable">
-    <tr>
-      
-      <tr><p style="font-size:16px">
-          Coming soon.
-      </p></tr>
-      <tr><a href="project/aacn_cvpr18/XuZZWOcvpr18.png"><img src="project/aacn_cvpr18/XuZZWOcvpr18.png" alt="alt text" width="450px" height="HEIGHTpx"/></a></tr>
-    </tr>
-  </table>
-</div>
-
-<div class="blockcontent" id="XuZZWOcvpr18_abstract" style="display:none"> 
-<pre>
-@inproceedings{xu2018attention,
- title = {Attention-Aware Compositional Network for Person Re-identification},
- author={Xu, Jing and Zhao, Rui and Zhu, Feng and Wang Huaming and Ouyang, Wanli},
- booktitle={CVPR},
- year={2018}
-}
-</pre>
-</div>
-<br /><br />
-
-
-<li>
-<a href=""> Crossing-line Crowd Counting with Two-phase Deep Neural Networks, </a> <br />
-Z. Zhao, H, Li, <b>R. Zhao</b>, X. Wang <br />
-<i>European Conference on Computer Vision  </i> (<b>ECCV</b>), 2016. (Acceptance rate: 28.4%) <br />
-</li>
-[<a href="project/clcc_eccv16/ZhaoLZWeccv16.pdf">PDF</a>]
-[<a href="javascript:toggleBibtex('ZhaoLZWeccv16_abstract')" target="_self">Abstract</a>]
-[<a href="javascript:toggleBibtex('ZhaoLZWeccv16')" target="_self">Bibtex</a>]
-[<a href="">Code</a>]
-[<a href="project/clcc_eccv16/ZhaoLZWeccv16.html">Supplementary Material</a>]
-[<a href="figures/coming_soon.jpg">Poster</a>]
-<!-- [<a href="project/deepsal_cvpr15/zhaoOLWcvpr15.html">Project Page</a>] -->
-[<a href="figures/coming_soon.jpg">DOI</a>]
-<div class="blockcontent" id="ZhaoLZWeccv16_abstract" style="display:none"> 
-  <table class="imgtable">
-    <tr>
-      
-      <tr><p style="font-size:16px">
-          In this paper, we propose a deep Convolutional Neural Network (CNN) for counting the number of people across a line-of-interest (LOI) in surveillance videos. It is a challenging problem and has many potential applications. Observing the limitations of temporal slices used by state-of-the-art LOI crowd counting methods, our proposed CNN directly estimates the crowd counts with pairs of video frames as inputs and is trained with pixel-level supervision maps. Such rich supervision information helps our CNN learn more discriminative feature representations. A two-phase training scheme is adopted, which decomposes the original counting problem into two easier sub-problems, estimating crowd density map and estimating crowd velocity map. Learning to solve the sub-problems provides a good initial point for our CNN model, which is then fine-tuned to solve the original counting problem. A new dataset with pedestrian trajectory annotations is introduced for evaluating LOI crowd counting methods and has more annotations than any existing one. Our extensive experiments show that our proposed method is robust to variations of crowd density, crowd velocity, and directions of the LOI, and outperforms state-of-the-art LOI counting methods.
-      </p></tr>
-      <tr><a href="project/clcc_eccv16/ZhaoLZWeccv16.png"><img src="project/clcc_eccv16/ZhaoLZWeccv16.png" alt="alt text" width="450px" height="HEIGHTpx"/></a></tr>
-    </tr>
-  </table>
-</div>
-
-<div class="blockcontent" id="ZhaoLZWeccv16_abstract" style="display:none"> 
-<pre>
-@inproceedings{zhao2016crossline,
- title = {Crossing-line Crowd Counting with Two-phase Deep Neural Networks},
- author={Zhao, Zhuoyi and Li, Hongsheng and Zhao, Rui and Wang, Xiaogang},
- booktitle={ECCV},
- year={2016}
-}
-</pre>
-</div>
-<br /><br />
-
-
-<li>
-<a href=""> Saliency Detection by Multi-context Deep Learning, </a> <br />
-<b>R. Zhao</b>, W. Ouyang, H. Li, X. Wang <br />
-<i>IEEE International Conference on Computer Vision and Pattern Recognition </i> (<b>CVPR</b>), 2015. (Acceptance rate: 28.4%) <br />
-</li>
-[<a href="project/deepsal_cvpr15/zhaoOLWcvpr15.pdf">PDF</a>]
-[<a href="javascript:toggleBibtex('ZhaoOLWcvpr15_abstract')" target="_self">Abstract</a>]
-[<a href="javascript:toggleBibtex('ZhaoOLWcvpr15')" target="_self">Bibtex</a>]
-[<a href="https://github.com/Robert0812/deepsaldet">Code</a>]
-[<a href="project/deepsal_cvpr15/zhaoOLWcvpr15.html">Supplementary Material</a>]
-[<a href="figures/coming_soon.jpg">Poster</a>]
-<!-- [<a href="project/deepsal_cvpr15/zhaoOLWcvpr15.html">Project Page</a>] -->
-[<a href="figures/coming_soon.jpg">DOI</a>]
-<div class="blockcontent" id="ZhaoOLWcvpr15_abstract" style="display:none"> 
-  <table class="imgtable">
-    <tr>
-      
-      <tr><p style="font-size:16px">
-          Low-level saliency cues or priors do not produce good enough saliency detection results especially when the salient object presents in a low-contrast background with confusing visual appearance. This issue raises a serious problem for conventional approaches. In this paper, we tackle this problem by proposing a multi-context deep learning framework for salient object detection. We employ deep Convolutional Neural Networks to model saliency of objects in images. Global context and local context are both taken into account, and are jointly modeled in a unified multi-context deep learning framework.
-<br />
-          To provide a better initialization for training the deep neural networks, we investigate different pre-training strategies, and a task-specific pre-training scheme is designed to make the multi-context modeling suited for saliency detection. Furthermore, recently proposed contemporary deep models in the ImageNet Image Classification Challenge are tested, and their effectiveness in saliency detection are investigated. Our approach is extensively evaluated on five public datasets, and experimental results show significant and consistent improvements over the state-of-the-art methods.
-      </p></tr>
-      <tr><a href="project/deepsal_cvpr15/zhaoOLWcvpr15.png"><img src="project/deepsal_cvpr15/zhaoOLWcvpr15.png" alt="alt text" width="450px" height="HEIGHTpx"/></a></tr>
-    </tr>
-  </table>
-</div>
-
-<div class="blockcontent" id="ZhaoOLWcvpr15" style="display:none"> 
-<pre>
-@inproceedings{zhao2015saliency,
- title = {Saliency Detection by Multi-context Deep Learning},
- author={Zhao, Rui and Ouyang, Wanli and Li, Hongsheng and Wang, Xiaogang},
- booktitle={CVPR},
- year={2015}
-}
-</pre>
-</div>
-<br /><br />
-
-<li>
-<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6909421">DeepReid: Deep Filter Pairing Neural Network for Person Re-Identification, </a> <br />
-W. Li, <b>R. Zhao</b>, T. Xiao, X. Wang. <br />
-<i>IEEE International Conference on Computer Vision and Pattern Recognition </i> (<b>CVPR</b>), 2014. (Acceptance rate: 29.8%)<br />
-</li>
-[<a href="project/fpnn_cvpr14/liZXWcvpr14.pdf">PDF</a>]
-[<a href="javascript:toggleBibtex('LiZXWcvpr14_abstract')" target="_self">Abstract</a>]
-[<a href="javascript:toggleBibtex('LiZXWcvpr14')" target="_self">Bibtex</a>]
-[<a href="project/fpnn_cvpr14/liZXWcvpr14_poster.pdf">Poster</a>]
-[<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6909421">DOI</a>]
-<div class="blockcontent" id="LiZXWcvpr14_abstract" style="display:none"> 
-  <table class="imgtable">
-    <tr>
-      
-      <tr><p style="font-size:16px">
-          Person re-identification is to match pedestrian images from disjoint camera views detected by pedestrian detectors. Challenges are presented in the form of complex variations of lightings, poses, viewpoints, blurring effects, image resolutions, camera settings, occlusions and background clutter across camera views. In addition, misalignment introduced by the pedestrian detector will affect most existing person re-identification methods that use manually cropped pedestrian images and assume perfect detection.
-          In this paper, we propose a novel filter pairing neural network (FPNN) to jointly handle misalignment, photometric and geometric transforms, occlusions and background clutter. All the key components are jointly optimized to maximize the strength of each component when cooperating with others. In contrast to existing works that use handcrafted features, our method automatically learns features optimal for the re-identification task from data. The learned filter pairs encode photometric transforms. Its deep architecture makes it possible to model a mixture of complex photometric and geometric transforms. We build the largest benchmark re-id dataset with 13,164 images of 1,360 pedestrians. Unlike existing datasets, which only provide manually cropped pedestrian images, our dataset provides automatically detected bounding boxes for evaluation close to practical applications. Our neural network significantly outperforms state-of-the-art methods on this dataset.
-      </p></tr>
-
-      <tr><a href="project/fpnn_cvpr14/liZXWcvpr14.png"><img src="project/fpnn_cvpr14/liZXWcvpr14.png" alt="alt text" width="600px" height="HEIGHTpx"/></a></tr>
-    </tr>
-  </table>
-</div>
-
-<div class="blockcontent" id="LiZXWcvpr14" style="display:none"> 
-<pre>
-@inproceedings{li2014deepreid,
- title = {DeepReid: Deep Filter Pairing Neural Network for Person Re-identification},
- author={Li, Wei and Zhao, Rui and Xiao, Tong and Wang, Xiaogang},
- booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
- year = {2014},
- month = {June},
- address = {Columbus, USA}
-}
-</pre>
-</div>
-<br /><br />
-
-<li>
-<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6909420">Learning Mid-level Filters for Person Re-Identfiation, </a> <br />
-<b>R. Zhao</b>, W. Ouyang, X. Wang. <br />
-<i>IEEE International Conference on Computer Vision and Pattern Recognition </i> (<b>CVPR</b>), 2014. (Acceptance rate: 29.8%)<br />
-</li>
-[<a href="project/midfilter_cvpr14/zhaoOWcvpr14.pdf">PDF</a>]
-[<a href="javascript:toggleBibtex('zhaoOWcvpr14_abstract')" target="_self">Abstract</a>]
-[<a href="javascript:toggleBibtex('zhaoOWcvpr14')" target="_self">Bibtex</a>]
-[<a href="project/midfilter_cvpr14/zhaoOWcvpr14.html">Project Page</a>]
-[<a href="project/midfilter_cvpr14/zhaoOWcvpr14_poster.pdf">Poster</a>]
-[<a href="https://github.com/Robert0812/midfilter_reid">Code</a>]
-[<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6909420">DOI</a>]
-<!-- [<a href="https://github.com/Robert0812/midlevel_filter">Code</a>] -->
-<div class="blockcontent" id="zhaoOWcvpr14_abstract" style="display:none"> 
-  <table class="imgtable">
-    <tr>
-      <td><a href="project/midfilter_cvpr14/zhaoOWcvpr14.jpg"><img src="project/midfilter_cvpr14/zhaoOWcvpr14.jpg" alt="alt text" width="200px" height="HEIGHTpx"/></a></td>
-      <td><p style="font-size:16px">
-          In this paper, we propose a novel approach of learning mid-level filters from automatically discovered patch clusters for person re-identification. It is well motivated by our study on what are good filters for person re-identification. Our mid-level filters are discriminatively learned for identifying specific visual patterns and distinguishing persons, and have good cross-view invariance. First, local patches are qualitatively measured and classified with their discriminative power. Discriminative and representative patches are collected for filter learning. Second, patch clusters with coherent appearance are obtained by pruning hierarchical clustering trees, and a simple but effective cross-view training strategy is proposed to learn filters that are view-invariant and discriminative. Third, filter responses are integrated with patch matching scores in RankSVM training. The effectiveness of our approach is validated on the VIPeR dataset and the CUHK01 dataset. The learned mid-level features are complementary to existing handcrafted low-level features, and improve the best Rank-1 matching rate on the VIPeR dataset by 14%.
-      </p></td>
-    </tr>
-  </table>
-</div>
-
-<div class="blockcontent" id="zhaoOWcvpr14" style="display:none"> 
-<pre>
-@inproceedings{zhao2014learning,
- title = {Learning Mid-level Filters for Person Re-identfiation},
- author={Zhao, Rui and Ouyang, Wanli and Wang, Xiaogang},
- booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
- year = {2014},
- month = {June},
- address = {Columbus, USA}
-}
-</pre>
-</div>
-<br /><br />
-
-<!-- </ol>
-
-<h2>Refereed Conference</h2>
-
-<ol> -->
-
-<li>
-<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6619304">Unsupervised Salience Learning for Person Re-Identification, </a> <br />
-<b>R. Zhao</b>, W. Ouyang, X. Wang. <br />
-<i>IEEE International Conference on Computer Vision and Pattern Recognition </i> (<b>CVPR</b>), 2013. (Acceptance rate: 25.2%)<br />
-</li>
-[<a href="project/salience_cvpr13/zhaoOWcvpr13.pdf">PDF</a>]
-[<a href="javascript:toggleBibtex('zhaoOWcvpr13_abstract')" target="_self">Abstract</a>]
-[<a href="javascript:toggleBibtex('zhaoOWcvpr13')" target="_self">Bibtex</a>]
-[<a href="http://mmlab.ie.cuhk.edu.hk/projects/project_salience_reid/index.html">Project Page</a>]
-[<a href="project/salience_cvpr13/zhaoOWcvpr13_poster.pdf">Poster</a>]
-[<a href= https://github.com/Robert0812/salience_reid>Code</a>]
-[<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6619304">DOI</a>]
-<div class="blockcontent" id="zhaoOWcvpr13_abstract" style="display:none"> 
-  <table class="imgtable">
-    <tr>
-      <td><a href="project/salience_cvpr13/zhaoOWcvpr13.png"><img src="project/salience_cvpr13/zhaoOWcvpr13.png" alt="alt text" width="200px" height="HEIGHTpx"/></a></td>
-      <td><p style="font-size:16px">
-          Human eyes can recognize person identities based on some small salient regions. However, such valuable salient information is often hidden when computing similarities of images with existing approaches. Moreover, many existing approaches learn discriminative features and handle drastic viewpoint change in a supervised way and require labeling new training data for a different pair of camera views. In this paper, we propose a novel perspective for person re-identiﬁcation based on unsupervised salience learning. Distinctive features are extracted without requiring identity labels in the training procedure. First, we apply adjacency constrained patch matching to build dense correspondence between image pairs, which shows effectiveness in handling misalignment caused by large viewpoint and pose variations. Second, we learn human salience in an unsupervised manner. To improve the performance of person re-identiﬁcation, human salience is incorporated in patch matching to ﬁnd reliable and discriminative matched patches. The effectiveness of our approach is validated on the widely used VIPeR dataset and ETHZ dataset.
-      </p></td>
-    </tr>
-  </table>
-</div>
-
-<div class="blockcontent" id="zhaoOWcvpr13" style="display:none"> 
-<pre>
-@inproceedings{zhao2013unsupervised,
- title = {Unsupervised Salience Learning for Person Re-identification},
- author={Zhao, Rui and Ouyang, Wanli and Wang, Xiaogang},
- booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
- year = {2013},
- month = {June},
- address = {Portland, USA}
-}
-</pre>
-</div>
-<br /><br />
-
-<li>
-<a href="project/salmatch_iccv13/zhaoOWiccv13.pdf">Person Re-Identification by Salience Matching, </a> <br />
-<b>R. Zhao</b>, W. Ouyang, X. Wang. <br />
-<i>In Proceedings of IEEE International Conference on Computer Vision</i> (<b>ICCV</b>), 2013. (Acceptance rate: 27.5%)<br />
-</li>
-[<a href="project/salmatch_iccv13/zhaoOWiccv13.pdf">PDF</a>]
-[<a href="javascript:toggleBibtex('zhaoOWiccv13_abstract')" target="_self">Abstract</a>]
-[<a href="javascript:toggleBibtex('zhaoOWiccv13')" target="_self">Bibtex</a>]
-[<a href="">Project Page</a>]
-[<a href="project/salmatch_iccv13/zhaoOWiccv13_poster.pdf">Poster</a>]
-[<a href="https://github.com/Robert0812/salience_match">Code</a>]
-[<a href="project/salmatch_iccv13/cmc_iccv13.tar.gz">CMC</a>]
-<div class="blockcontent" id="zhaoOWiccv13_abstract" style="display:none"> 
-  <table class="imgtable">
-    <tr>
-      <td><a href="project/salmatch_iccv13/zhaoOWiccv13.jpg"><img src="project/salmatch_iccv13/zhaoOWiccv13.jpg" alt="alt text" width="200px" height="HEIGHTpx"/></a></td>
-      <td><p style="font-size:16px">
-          Human salience is distinctive and reliable information in matching pedestrians across disjoint camera views. In this paper, we exploit the pairwise salience distribution relationship between pedestrian images, and solve the person re-identification problem by proposing a salience matching strategy. To handle the misalignment problem in pedestrian images, patch matching is adopted and patch salience is estimated. Matching patches with inconsistent salience brings penalty. Images of the same person are recognized by minimizing thesalience matching cost. Furthermore, our salience matching is tightly integrated with patch matching in a unified structural RankSVM learning framework. The effectiveness of our approach is validated on the VIPeR dataset and the CUHK Campus dataset. It outperforms the state-of-the-art methods on both datasets.
-      </p></td>
-    </tr>
-  </table>
-</div>
-
-<!-- 
-Human salience is distinctive and reliable information in matching pedestrians across disjoint camera views. In this paper, we exploit the pairwise salience distribution relationship between pedestrian images, and solve the person re-identification problem by proposing a salience matching strategy. To handle the misalignment problem in pedestrian images, patch matching is adopted and patch salience is estimated. Matching patches with inconsistent salience brings penalty. Images of the same person are recognized by minimizing thesalience matching cost. Furthermore, our salience matching is tightly integrated with patch matching in a unified structural RankSVM learning framework. The effectiveness of our approach is validated on the VIPeR dataset and the CUHK Campus dataset. It outperforms the state-of-the-art methods on both datasets.
- -->
-
-<div class="blockcontent" id="zhaoOWiccv13" style="display:none"> 
-<pre>
-@inproceedings{zhao2013person,
- title = {Person Re-identification by Salience Matching},
- author={Zhao, Rui and Ouyang, Wanli and Wang, Xiaogang},
- booktitle = {IEEE International Conference on Computer Vision (ICCV)},
- year = {2013},
- month = {December},
- address = {Sydney, Australia}
-}
-</pre>
-</div>
-
-<br /><br />
-
-<li>
-<a href="http://link.springer.com/chapter/10.1007%2F978-3-642-37331-2_3">Human Reidentification with Transferred Metric Learning, </a> <br />
-W. Li, <b>R. Zhao</b>, X. Wang. <br />
-<i>In Proceedings of Asian Conference on Computer Vision </i> (<b>ACCV</b>), 2012. (Oral Acceptance rate: 3.6%) <br />
-</li>
-[<a href="project/transfer_accv12/liZWaccv12.pdf">PDF</a>]
-[<a href="javascript:toggleBibtex('liZWaccv12_abstract')" target="_self">Abstract</a>] 
-[<a href="javascript:toggleBibtex('liZWaccv12')" target="_self">Bibtex</a>] 
-[<a href="http://www.ee.cuhk.edu.hk/~xgwang/CUHK_identification.html">Dataset</a>]
-[<a href="http://link.springer.com/chapter/10.1007%2F978-3-642-37331-2_3">DOI</a>]
-
-<div class="blockcontent" id="liZWaccv12_abstract" style="display:none"> 
-  <table class="imgtable">
-    <tr>
-      <td><a href="project/transfer_accv12/liZWaccv12.jpg"><img src="project/transfer_accv12/liZWaccv12.jpg" alt="alt text" width="200px" height="HEIGHTpx"/></a></td>
-      <td><p style="font-size:16px">
-          Human reidentification is to match persons observed in nonoverlapping camera views with visual features for inter-camera tracking. The ambiguity increases with the number of candidates to be distinguished. Simple temporal reasoning can simplify the problem by pruning the candidate set to be matched. Existing approaches adopt a fixed metric for matching all the subjects. Our approach is motivated by the insight that different visual metrics should be optimally learned for different candidate sets. We tackle this problem under a transfer learning framework. Given a large training set, the training samples are selected and reweighted according to their visual similarities with the query sample and its candidate set. A weighted maximum margin metric is online learned and transferred from a generic metric to a candidate-set-specific metric. The whole online reweighting and learning process takes less than two seconds per candidate set. Experiments on the VIPeR dataset and our dataset show that the proposed transferred metric learning significantly outperforms directly matching visual features or using a single generic metric learned from the whole training set.
-      </p></td>
-    </tr>
-  </table>
-</div>
-
-<div class="blockcontent" id="liZWaccv12" style="display:none"> 
-<pre>
-@inproceedings{li2012human,
-  title = {Human Reidentification with Transferred Metric Learning},
-  author={Li, Wei and Zhao, Rui and Wang, Xiaogang},
-  booktitle = {Proceedings of Asian Conference on Computer Vision (ACCV)},
-  year = {2012}
-}
-</pre>
-</div>
-<br /><br />
-
-<li>
-<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5651004">SVD Based Linear Filtering in DCT Domain, </a> <br />
-L. Zhuang, <b>R. Zhao</b>, N. Yu, B. Liu. <br />
-<i>IEEE International Conference on Image Processing </i> (<b>ICIP</b>), 2010. <br />
-</li>
-[<a href="project/svdfilter_icip10/zhuangZicip10.pdf">PDF</a>]
-[<a href="javascript:toggleBibtex('zhuangZicip10_abstract')" target="_self">Abstract</a>] 
-[<a href="javascript:toggleBibtex('zhuangZicip10')" target="_self">Bibtex</a>] 
-[<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5651004">DOI</a>]
-
-<div class="blockcontent" id="zhuangZicip10_abstract" style="display:none"> 
-  <table class="imgtable">
-    <tr>
-      <td><a href="project/svdfilter_icip10/zhuangZicip10.jpg"><img src="project/svdfilter_icip10/zhuangZicip10.jpg" alt="alt text" width="200px" height="HEIGHTpx"/></a></td>
-      <td><p style="font-size:16px">
-          Efficient linear filtering in DCT domain is important in the area of processing and manipulation of image and video streams compressed in DCT-based method. In this paper, we proposed a novel method for linear filtering in DCT domain, regardless of filter type. We decompose any filter by SVD into weighted separable sub-filters which are well studied. Then we do fast linear filtering using these separable subfilters in DCT domain, and combine their results. To our best knowledge, it is the first method capable to do linear filtering with any type of filters directly in DCT domain. The scheme is demonstrated and discussed by doing Gabor filtering in DCT domain. Experiment results show that convolution result using the proposed solution is the same as that in spatial domain. Furthermore, our scheme is well suitable for distributed computing, which will improve computing speed greatly.
-      </p></td>
-    </tr>
-  </table>
-</div>
-
-<div class="blockcontent" id="zhuangZicip10" style="display:none"> 
-<pre>
-@inproceedings{zhuang2010SVD,
- title = {SVD Based Linear Filtering in DCT Domain},
- author={Zhuang, Liansheng and Zhao, Rui and Yu, Nenghai and Liu, Bin},
- booktitle = {IEEE International Conference on Image Processing (ICIP)},
- year = {2010}
-}
-</pre>
-</div>
-
-</ul>
-
-<h2>Poster</h2>
-
-<ul>
-
-<li>
-<a href="http://acmhk.cse.ust.hk/srcday2013/index.html">Person Re-Identification by Salience Matching, </a> <br />
-<b>R. Zhao</b>, W. Ouyang, X. Wang. <br />
-<i>in the 10th ACM-HK Student Research and Career Day</i> (<b>SRCDAY</b>), November 19th, 2013. <br />
-</li>
-<br />
-
-<li>
-<a href="http://acmhk.cse.ust.hk/srcday2013/index.html">Unsupervised Salience Learning for Person Re-Identification, </a> <br />
-<b>R. Zhao</b>, W. Ouyang, X. Wang. <br />
-<i>in the 10th ACM-HK Student Research and Career Day</i> (<b>SRCDAY</b>), November 19th, 2013. <br />
-</li>
-<br />
-
-</ul>
-
-
-<p><a href="./">Go back to Rui's homepage</a></p>
-
-<div id="footer">
-<div id="footer-text">
-Page generated 2013-05-15 20:02:30 China Standard Time, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
-</div>
-</div>
+<div class="container">
+
+  <p style="margin-bottom:28px;">
+    <a href="index.html">← Rui Zhao</a>
+    &nbsp;&nbsp;
+    <a href="https://scholar.google.com/citations?user=1c9oQNMAAAAJ">Google Scholar</a>
+    &nbsp;&nbsp;
+    <a href="archive/cv_rui.pdf">CV (PDF)</a>
+  </p>
+
+  <h1 style="font-size:24px;font-weight:700;color:#111;margin-bottom:28px;">Publications</h1>
+
+  <script>
+  function toggleBib(id) {
+    var el = document.getElementById(id);
+    el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+  }
+  </script>
+
+  <!-- ── Journals ── -->
+  <section>
+    <h2>Journal Articles</h2>
+    <ul class="pub-list">
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Hulk: A Universal Knowledge Translator for Human-Centric Tasks</div>
+          <div class="pub-authors">Y. Wang, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI), 2025</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Instruct-ReID++: Towards Universal Purpose Instruction-Guided Person Re-identification</div>
+          <div class="pub-authors">W. He, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI), 2025</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">RelationLMM: Large Multimodal Model as Open and Versatile Visual Relationship Generalist</div>
+          <div class="pub-authors">C. Xie, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI), 2025</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">ZeroPose: CAD-Prompted Zero-Shot Object 6D Pose Estimation in Cluttered Scenes</div>
+          <div class="pub-authors">J. Chen, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2024</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Efficient Masked Autoencoders with Self-Consistency</div>
+          <div class="pub-authors">Z. Li, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI), 2024</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">GESA: A GEneral Scenario-Agnostic Reinforcement Learning for Traffic Signal Control</div>
+          <div class="pub-authors">H. Jiang, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Transactions on Intelligent Transportation Systems (T-ITS), 2024</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Relation-aware Distribution Representation Network for Person Clustering with Multiple Modalities</div>
+          <div class="pub-authors">K. Liu, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Transactions on Multimedia (TMM), 2023</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Cocas+: Large-scale Clothes-Changing Person Re-identification with Clothes Templates</div>
+          <div class="pub-authors">S. Li, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2022</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Structured Domain Adaptation with Online Relation Regularization for Unsupervised Person Re-ID</div>
+          <div class="pub-authors">Y. Ge, F. Zhu, D. Chen, <strong>R. Zhao</strong>, H. Li</div>
+          <div class="pub-venue">IEEE Transactions on Neural Networks and Learning Systems (TNNLS), 2022</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">AutoMA: Towards Automatic Model Augmentation for Transferable Adversarial Attacks</div>
+          <div class="pub-authors">H. Yuan, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Transactions on Multimedia (TMM), 2021</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Person Re-Identification by Saliency Learning</div>
+          <div class="pub-authors"><strong>R. Zhao</strong>, W. Ouyang, X. Wang</div>
+          <div class="pub-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI), vol. 39, no. 2, pp. 356–370, 2016</div>
+          <div class="pub-links">
+            <a href="archive/project/person_tpami16/zhaoOWtpami16.pdf">PDF</a>
+            <a href="javascript:void(0)" onclick="toggleBib('bib_tpami16')">BibTeX</a>
+          </div>
+          <pre class="bibtex-block" id="bib_tpami16">@article{zhao2016person,
+  title={Person Re-Identification by Saliency Learning},
+  author={Zhao, Rui and Ouyang, Wanli and Wang, Xiaogang},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume={39}, number={2}, pages={356--370}, year={2016}
+}</pre>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Counting Vehicles from Semantic Regions</div>
+          <div class="pub-authors"><strong>R. Zhao</strong>, X. Wang</div>
+          <div class="pub-venue">IEEE Transactions on Intelligent Transportation Systems (T-ITS), vol. 14, no. 2, pp. 1016–1022, 2013</div>
+          <div class="pub-links">
+            <a href="archive/project/vehicle_tits13/zhaoWtits13.pdf">PDF</a>
+            <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6478825">DOI</a>
+            <a href="javascript:void(0)" onclick="toggleBib('bib_tits13')">BibTeX</a>
+          </div>
+          <pre class="bibtex-block" id="bib_tits13">@article{zhao2013counting,
+  title={Counting Vehicles from Semantic Regions},
+  author={Zhao, Rui and Wang, Xiaogang},
+  journal={IEEE Transactions on Intelligent Transportation Systems},
+  volume={14}, number={2}, pages={1016--1022}, year={2013}
+}</pre>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- ── Book Chapter ── -->
+  <section>
+    <h2>Book Chapter</h2>
+    <ul class="pub-list">
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Person Re-Identification: System Design and Evaluation Overview</div>
+          <div class="pub-authors">X. Wang, <strong>R. Zhao</strong></div>
+          <div class="pub-venue">Chapter in <em>Person Re-Identification</em>, Springer, 2014</div>
+          <div class="pub-links">
+            <a href="http://link.springer.com/chapter/10.1007/978-1-4471-6296-4_17">DOI</a>
+            <a href="javascript:void(0)" onclick="toggleBib('bib_springer14')">BibTeX</a>
+          </div>
+          <pre class="bibtex-block" id="bib_springer14">@inbook{wang2014person,
+  title={Person Re-Identification: System Design and Evaluation Overview},
+  author={Wang, Xiaogang and Zhao, Rui},
+  booktitle={Person Re-Identification},
+  pages={351--370}, year={2014}, publisher={Springer}
+}</pre>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- ── Conference ── -->
+  <section>
+    <h2>Conference Papers</h2>
+    <ul class="pub-list">
+
+      <!-- 2025 -->
+      <li class="pub-year-label">2025</li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">TimeCMA: Towards LLM-Empowered Multivariate Time Series Forecasting via Cross-Modality Alignment</div>
+          <div class="pub-authors">C. Liu, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">AAAI Conference on Artificial Intelligence (AAAI), 2025</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">KITS: Inductive Spatio-Temporal Kriging with Increment Training Strategy</div>
+          <div class="pub-authors">Q. Xu, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">AAAI Conference on Artificial Intelligence (AAAI), 2025</div>
+        </div>
+      </li>
+
+      <!-- 2024 -->
+      <li class="pub-year-label">2024</li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Hybrid Mamba for Few-Shot Segmentation</div>
+          <div class="pub-authors">Q. Xu, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">Conference on Neural Information Processing Systems (NeurIPS), 2024</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">TPTU-v2: Boosting Task Planning and Tool Usage of Large Language Model-based Agents in Real-world Industry Systems</div>
+          <div class="pub-authors">Y. Kong, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">Conference on Empirical Methods in Natural Language Processing: Industry Track (EMNLP), 2024</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Eliminating Feature Ambiguity for Few-shot Segmentation</div>
+          <div class="pub-authors">Q. Xu, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">European Conference on Computer Vision (ECCV), 2024</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">CosLight: Co-optimizing Collaborator Selection and Decision-Making to Enhance Traffic Signal Control</div>
+          <div class="pub-authors">J. Ruan, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2024</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Balancing Speciality and Versatility: A Coarse to Fine Framework for Supervised Fine-tuning Large Language Model</div>
+          <div class="pub-authors">H. Zhang, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">Findings of the Association for Computational Linguistics (ACL), 2024</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Sequential Asynchronous Action Coordination in Multi-Agent Systems: A Stackelberg Decision Transformer Approach</div>
+          <div class="pub-authors">B. Zhang, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">International Conference on Machine Learning (ICML), 2024</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Self-Supervised Representation Learning from Arbitrary Scenarios</div>
+          <div class="pub-authors">Z. Li, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Instruct-ReID: A Multi-Purpose Person Re-identification Task with Instructions</div>
+          <div class="pub-authors">W. He, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Link-Context Learning for Multimodal LLMs</div>
+          <div class="pub-authors">Y. Tai, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024</div>
+        </div>
+      </li>
+
+      <!-- 2023 -->
+      <li class="pub-year-label">2023</li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Described Object Detection: Liberating Object Detection with Flexible Expressions</div>
+          <div class="pub-authors">C. Xie, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">Conference on Neural Information Processing Systems (NeurIPS), 2023</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">MM-DAG: Multi-task DAG Learning for Multi-Modal Data — with Application for Traffic Congestion Analysis</div>
+          <div class="pub-authors">T. Lan, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2023</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">CWSeg: An Efficient and General Approach to Chinese Word Segmentation</div>
+          <div class="pub-authors">D. Li, <strong>R. Zhao</strong>, F. Tan</div>
+          <div class="pub-venue">Annual Meeting of the Association for Computational Linguistics: Industry Track (ACL), 2023</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Exploring Stochastic Autoregressive Image Modeling for Visual Representation</div>
+          <div class="pub-authors">Y. Qi, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">AAAI Conference on Artificial Intelligence (AAAI), 2023</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">PUnifiedNER: A Prompting-based Unified NER System for Diverse Datasets</div>
+          <div class="pub-authors">J. Lu, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">AAAI Conference on Artificial Intelligence (AAAI), 2023</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Human Preference Score: Better Aligning Text-to-Image Models with Human Preference</div>
+          <div class="pub-authors">X. Wu, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE International Conference on Computer Vision (ICCV), 2023</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Advancing Referring Expression Segmentation beyond Single Image</div>
+          <div class="pub-authors">Y. Wu, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE International Conference on Computer Vision (ICCV), 2023</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">MIAD: A Maintenance Inspection Dataset for Unsupervised Anomaly Detection</div>
+          <div class="pub-authors">T. Bao, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE International Conference on Computer Vision (ICCV), 2023</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Balancing Logit Variation for Long-tailed Semantic Segmentation</div>
+          <div class="pub-authors">Y. Wang, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2023</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">CORA: Adapting CLIP for Open-Vocabulary Detection with Region Prompting and Anchor Pre-matching</div>
+          <div class="pub-authors">X. Wu, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2023</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Explore the Power of Synthetic Data on Few-shot Object Detection</div>
+          <div class="pub-authors">S. Lin, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2023</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">HumanBench: Towards General Human-Centric Perception with Projector Assisted Pretraining</div>
+          <div class="pub-authors">S. Tang, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2023</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">UniHCP: A Unified Model for Human-Centric Perceptions</div>
+          <div class="pub-authors">Y. Ci, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2023</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">An Effective Crop-Paste Pipeline for Few-shot Object Detection</div>
+          <div class="pub-authors">S. Lin, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2023</div>
+        </div>
+      </li>
+
+      <!-- 2022 -->
+      <li class="pub-year-label">2022</li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Unsupervised Object Detection Pretraining with Joint Object Priors Generation and Detector Learning</div>
+          <div class="pub-authors">Y. Wang, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">Conference on Neural Information Processing Systems (NeurIPS), 2022</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Obj2Seq: Formatting Objects as Sequences with Class Prompt for Visual Tasks</div>
+          <div class="pub-authors">Z. Chen, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">Conference on Neural Information Processing Systems (NeurIPS), 2022</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Unifying Visual Contrastive Learning for Object Recognition from a Graph Perspective</div>
+          <div class="pub-authors">S. Tang, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">European Conference on Computer Vision (ECCV), 2022</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Relative Contrastive Loss for Unsupervised Representation Learning</div>
+          <div class="pub-authors">S. Tang, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">European Conference on Computer Vision (ECCV), 2022</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Counterfactual Intervention Feature Transfer for Visible-Infrared Person Re-Identification</div>
+          <div class="pub-authors">X. Li, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">European Conference on Computer Vision (ECCV), 2022</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Domain Invariant Masked Autoencoders for Self-Supervised Learning from Multi-Domains</div>
+          <div class="pub-authors">H. Yang, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">European Conference on Computer Vision (ECCV), 2022</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Jointly Contrastive Representation Learning on Road Network and Trajectory</div>
+          <div class="pub-authors">Z. Mao, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">ACM International Conference on Information &amp; Knowledge Management (CIKM), 2022</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Cycle-consistent Masked Autoencoder for Unsupervised Domain Generalization</div>
+          <div class="pub-authors">H. Yang, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">International Conference on Learning Representations (ICLR), 2023</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Contextual Image Masking Modeling via Synergized Contrasting without View Augmentation for Faster and Better Visual Pretraining</div>
+          <div class="pub-authors">S. Zhang, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">International Conference on Learning Representations (ICLR), 2023</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Three-stage Training Pipeline with Patch Random Drop for Few-shot Object Detection</div>
+          <div class="pub-authors">S. Lin, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">Asian Conference on Computer Vision (ACCV), 2022</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Align Representations with Base: A New Approach to Self-supervised Learning</div>
+          <div class="pub-authors">S. Zhang, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2022</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Uni6D: A Unified CNN Framework without Projection Breakdown for 6D Pose Estimation</div>
+          <div class="pub-authors">X. Jiang, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2022</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">UniVIP: A Unified Framework for Self-Supervised Visual Pre-training</div>
+          <div class="pub-authors">Z. Li, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2022</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Feature Erasing and Diffusion Network for Occluded Person Re-Identification</div>
+          <div class="pub-authors">Z. Wang, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2022</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Semi-Supervised Semantic Segmentation Using Unreliable Pseudo-labels</div>
+          <div class="pub-authors">Y. Wang, et al., <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2022</div>
+        </div>
+      </li>
+
+      <!-- 2021 -->
+      <li class="pub-year-label">2021</li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Progressive Correspondence Pruning by Consensus Learning</div>
+          <div class="pub-authors">Z. Chen, Y. Ge, F. Zhu, <strong>R. Zhao</strong>, H. Li, M. Salzmann</div>
+          <div class="pub-venue">IEEE International Conference on Computer Vision (ICCV), 2021</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Continual Representation Learning for Biometric Identification</div>
+          <div class="pub-authors">B. Zhao, S. Tang, D. Chen, H. Bilen, <strong>R. Zhao</strong></div>
+          <div class="pub-venue">Winter Conference on Applications of Computer Vision (WACV), 2021</div>
+        </div>
+      </li>
+
+      <!-- 2020 -->
+      <li class="pub-year-label">2020</li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Self-paced Contrastive Learning with Hybrid Memory for Domain Adaptive Object Re-ID</div>
+          <div class="pub-authors">Y. Ge, F. Zhu, D. Chen, <strong>R. Zhao</strong>, H. Li</div>
+          <div class="pub-venue">Conference on Neural Information Processing Systems (NeurIPS), 2020</div>
+          <div class="pub-links">
+            <a href="javascript:void(0)" onclick="toggleBib('bib_nips20')">BibTeX</a>
+          </div>
+          <pre class="bibtex-block" id="bib_nips20">@inproceedings{ge2020self,
+  title={Self-paced Contrastive Learning with Hybrid Memory for Domain Adaptive Object Re-ID},
+  author={Ge, Yixiao and Zhu, Feng and Chen, Dapeng and Zhao, Rui and Li, Hongsheng},
+  booktitle={NeurIPS}, year={2020}
+}</pre>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Self-supervising Fine-grained Region Similarities for Large-scale Image Localization</div>
+          <div class="pub-authors">Y. Ge, H. Wang, F. Zhu, <strong>R. Zhao</strong>, H. Li</div>
+          <div class="pub-venue">European Conference on Computer Vision (ECCV), 2020</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">RBF-Softmax: Learning Deep Representative Prototypes with Radial Basis Function Softmax</div>
+          <div class="pub-authors">X. Zhang, <strong>R. Zhao</strong>, Y. Qiao, H. Li</div>
+          <div class="pub-venue">European Conference on Computer Vision (ECCV), 2020</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">COCAS: A Large-Scale Clothes Changing Person Dataset for Re-identification</div>
+          <div class="pub-authors">S. Yu, S. Li, D. Chen, <strong>R. Zhao</strong>, J. Yan, Y. Qiao</div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Density-Aware Feature Embedding for Face Clustering</div>
+          <div class="pub-authors">S. Guo, J. Xu, D. Chen, C. Zhang, X. Wang, <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020</div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Learning to Cluster Faces via Confidence and Connectivity Estimation</div>
+          <div class="pub-authors">L. Yang, D. Chen, X. Zhan, <strong>R. Zhao</strong>, C. C. Loy, D. Lin</div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020</div>
+        </div>
+      </li>
+
+      <!-- 2019 -->
+      <li class="pub-year-label">2019</li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Memory-Based Neighbourhood Embedding for Visual Recognition</div>
+          <div class="pub-authors">S. Li, D. Chen, B. Liu, N. Yu, <strong>R. Zhao</strong></div>
+          <div class="pub-venue">IEEE International Conference on Computer Vision (ICCV), 2019</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/1908.04992">PDF</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">AdaScale: Adaptively Scaling Cosine Logits for Effectively Learning Deep Face Representations</div>
+          <div class="pub-authors">X. Zhang, <strong>R. Zhao</strong>, Y. Qiao, X. Wang, H. Li</div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019</div>
+          <div class="pub-links">
+            <a href="javascript:void(0)" onclick="toggleBib('bib_cvpr19ada')">BibTeX</a>
+          </div>
+          <pre class="bibtex-block" id="bib_cvpr19ada">@inproceedings{zhang2019adascale,
+  title={AdaScale: Adaptively Scaling Cosine Logits for Effectively Learning Deep Face Representations},
+  author={Zhang, Xiao and Zhao, Rui and Qiao, Yu and Wang, Xiaogang and Li, Hongsheng},
+  booktitle={CVPR}, year={2019}
+}</pre>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">P2SGrad: Refined Gradients for Optimizing Deep Face Models</div>
+          <div class="pub-authors">X. Zhang, <strong>R. Zhao</strong>, J. Yan, M. Gao, Y. Qiao, X. Wang, H. Li</div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019</div>
+          <div class="pub-links">
+            <a href="javascript:void(0)" onclick="toggleBib('bib_cvpr19p2s')">BibTeX</a>
+          </div>
+          <pre class="bibtex-block" id="bib_cvpr19p2s">@inproceedings{zhang2019p2sgrad,
+  title={P2SGrad: Refined Gradients for Optimizing Deep Face Models},
+  author={Zhang, Xiao and Zhao, Rui and Yan, Junjie and Gao, Mengya and Qiao, Yu and Wang, Xiaogang and Li, Hongsheng},
+  booktitle={CVPR}, year={2019}
+}</pre>
+        </div>
+      </li>
+
+      <!-- 2018 -->
+      <li class="pub-year-label">2018</li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Attention-Aware Compositional Network for Person Re-identification</div>
+          <div class="pub-authors">J. Xu, <strong>R. Zhao</strong>, F. Zhu, H. Wang, W. Ouyang</div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018</div>
+          <div class="pub-links">
+            <a href="archive/project/aacn_cvpr18/XuZZWOcvpr18.pdf">PDF</a>
+            <a href="javascript:void(0)" onclick="toggleBib('bib_cvpr18')">BibTeX</a>
+          </div>
+          <pre class="bibtex-block" id="bib_cvpr18">@inproceedings{xu2018attention,
+  title={Attention-Aware Compositional Network for Person Re-identification},
+  author={Xu, Jing and Zhao, Rui and Zhu, Feng and Wang, Huaming and Ouyang, Wanli},
+  booktitle={CVPR}, year={2018}
+}</pre>
+        </div>
+      </li>
+
+      <!-- 2016 -->
+      <li class="pub-year-label">2016</li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Crossing-line Crowd Counting with Two-phase Deep Neural Networks</div>
+          <div class="pub-authors">Z. Zhao, H. Li, <strong>R. Zhao</strong>, X. Wang</div>
+          <div class="pub-venue">European Conference on Computer Vision (ECCV), 2016</div>
+          <div class="pub-links">
+            <a href="archive/project/clcc_eccv16/ZhaoLZWeccv16.pdf">PDF</a>
+            <a href="javascript:void(0)" onclick="toggleBib('bib_eccv16')">BibTeX</a>
+          </div>
+          <pre class="bibtex-block" id="bib_eccv16">@inproceedings{zhao2016crossing,
+  title={Crossing-line Crowd Counting with Two-phase Deep Neural Networks},
+  author={Zhao, Zhuoyi and Li, Hongsheng and Zhao, Rui and Wang, Xiaogang},
+  booktitle={ECCV}, year={2016}
+}</pre>
+        </div>
+      </li>
+
+      <!-- 2015 -->
+      <li class="pub-year-label">2015</li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Saliency Detection by Multi-context Deep Learning</div>
+          <div class="pub-authors"><strong>R. Zhao</strong>, W. Ouyang, H. Li, X. Wang</div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2015</div>
+          <div class="pub-links">
+            <a href="archive/project/deepsal_cvpr15/zhaoOLWcvpr15.pdf">PDF</a>
+            <a href="https://github.com/Robert0812/deepsaldet">Code</a>
+            <a href="javascript:void(0)" onclick="toggleBib('bib_cvpr15sal')">BibTeX</a>
+          </div>
+          <pre class="bibtex-block" id="bib_cvpr15sal">@inproceedings{zhao2015saliency,
+  title={Saliency Detection by Multi-context Deep Learning},
+  author={Zhao, Rui and Ouyang, Wanli and Li, Hongsheng and Wang, Xiaogang},
+  booktitle={CVPR}, year={2015}
+}</pre>
+        </div>
+      </li>
+
+      <!-- 2014 -->
+      <li class="pub-year-label">2014</li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">DeepReid: Deep Filter Pairing Neural Network for Person Re-Identification</div>
+          <div class="pub-authors">W. Li, <strong>R. Zhao</strong>, T. Xiao, X. Wang</div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2014</div>
+          <div class="pub-links">
+            <a href="archive/project/fpnn_cvpr14/liZXWcvpr14.pdf">PDF</a>
+            <a href="archive/project/fpnn_cvpr14/liZXWcvpr14_poster.pdf">Poster</a>
+            <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6909421">DOI</a>
+            <a href="javascript:void(0)" onclick="toggleBib('bib_cvpr14deep')">BibTeX</a>
+          </div>
+          <pre class="bibtex-block" id="bib_cvpr14deep">@inproceedings{li2014deepreid,
+  title={DeepReid: Deep Filter Pairing Neural Network for Person Re-Identification},
+  author={Li, Wei and Zhao, Rui and Xiao, Tong and Wang, Xiaogang},
+  booktitle={CVPR}, year={2014}
+}</pre>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Learning Mid-level Filters for Person Re-Identification</div>
+          <div class="pub-authors"><strong>R. Zhao</strong>, W. Ouyang, X. Wang</div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2014</div>
+          <div class="pub-links">
+            <a href="archive/project/midfilter_cvpr14/zhaoOWcvpr14.pdf">PDF</a>
+            <a href="archive/project/midfilter_cvpr14/zhaoOWcvpr14_poster.pdf">Poster</a>
+            <a href="https://github.com/Robert0812/midfilter_reid">Code</a>
+            <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6909420">DOI</a>
+            <a href="javascript:void(0)" onclick="toggleBib('bib_cvpr14mid')">BibTeX</a>
+          </div>
+          <pre class="bibtex-block" id="bib_cvpr14mid">@inproceedings{zhao2014learning,
+  title={Learning Mid-level Filters for Person Re-Identification},
+  author={Zhao, Rui and Ouyang, Wanli and Wang, Xiaogang},
+  booktitle={CVPR}, year={2014}
+}</pre>
+        </div>
+      </li>
+
+      <!-- 2013 -->
+      <li class="pub-year-label">2013</li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Unsupervised Salience Learning for Person Re-Identification</div>
+          <div class="pub-authors"><strong>R. Zhao</strong>, W. Ouyang, X. Wang</div>
+          <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2013</div>
+          <div class="pub-links">
+            <a href="archive/project/salience_cvpr13/zhaoOWcvpr13.pdf">PDF</a>
+            <a href="archive/project/salience_cvpr13/zhaoOWcvpr13_poster.pdf">Poster</a>
+            <a href="https://github.com/Robert0812/salience_reid">Code</a>
+            <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6619304">DOI</a>
+            <a href="javascript:void(0)" onclick="toggleBib('bib_cvpr13')">BibTeX</a>
+          </div>
+          <pre class="bibtex-block" id="bib_cvpr13">@inproceedings{zhao2013unsupervised,
+  title={Unsupervised Salience Learning for Person Re-Identification},
+  author={Zhao, Rui and Ouyang, Wanli and Wang, Xiaogang},
+  booktitle={CVPR}, year={2013}
+}</pre>
+        </div>
+      </li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Person Re-Identification by Salience Matching</div>
+          <div class="pub-authors"><strong>R. Zhao</strong>, W. Ouyang, X. Wang</div>
+          <div class="pub-venue">IEEE International Conference on Computer Vision (ICCV), 2013</div>
+          <div class="pub-links">
+            <a href="archive/project/salmatch_iccv13/zhaoOWiccv13.pdf">PDF</a>
+            <a href="archive/project/salmatch_iccv13/zhaoOWiccv13_poster.pdf">Poster</a>
+            <a href="https://github.com/Robert0812/salience_match">Code</a>
+            <a href="javascript:void(0)" onclick="toggleBib('bib_iccv13')">BibTeX</a>
+          </div>
+          <pre class="bibtex-block" id="bib_iccv13">@inproceedings{zhao2013person,
+  title={Person Re-Identification by Salience Matching},
+  author={Zhao, Rui and Ouyang, Wanli and Wang, Xiaogang},
+  booktitle={ICCV}, year={2013}
+}</pre>
+        </div>
+      </li>
+
+      <!-- 2012 -->
+      <li class="pub-year-label">2012</li>
+
+      <li class="pub-entry">
+        <div class="pub-body">
+          <div class="pub-title">Human Reidentification with Transferred Metric Learning</div>
+          <div class="pub-authors">W. Li, <strong>R. Zhao</strong>, X. Wang</div>
+          <div class="pub-venue">Asian Conference on Computer Vision (ACCV), 2012 &nbsp;<em>(Oral, 3.6% acceptance rate)</em></div>
+          <div class="pub-links">
+            <a href="http://link.springer.com/chapter/10.1007%2F978-3-642-37331-2_3">DOI</a>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <footer>
+    <a href="index.html">← Back to homepage</a>
+    &nbsp;|&nbsp; Last updated March 2026.
+  </footer>
+
 </div>
 </body>
 </html>

@@ -1,0 +1,88 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Rui Zhao (赵瑞)
+    - name: Position
+      value: Research Executive Director, SenseTime Group
+    - name: Email
+      value: rzhao@link.cuhk.edu.hk
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Ph.D. in Electronic Engineering
+      institution: The Chinese University of Hong Kong (CUHK), Hong Kong
+      year: 2015
+      description:
+        - Supervised by Prof. Xiaogang Wang
+        - Member of Multimedia Lab (MMLab) and Image and Video Processing Lab (IVPLab)
+    - title: B.S. in Electronic Engineering and Information Science
+      institution: University of Science and Technology of China (USTC), Hefei, China
+      year: 2010
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Research Executive Director / Head of Smart City R&D Group
+      institution: SenseTime Group Limited, Shenzhen, China
+      year: 2017 - now
+      description:
+        - Leads pivotal research projects in face recognition and financial LLMs
+        - Head of Smart City R&D and Financial Large Language Model groups
+    - title: CTO and Chief Scientist
+      institution: SenseNets (affiliated venture of SenseTime), Shenzhen, China
+      year: 2015 - 2017
+
+- title: Open Source Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/Robert0812/deepsaldet">deepsaldet</a>
+      year: 2015
+      description: Multi-context deep learning for saliency detection (CVPR 2015).
+    - title: <a href="https://github.com/Robert0812/midfilter_reid">midfilter_reid</a>
+      year: 2014
+      description: Mid-level filters for person re-identification (CVPR 2014).
+    - title: <a href="https://github.com/Robert0812/salience_reid">salience_reid</a>
+      year: 2013
+      description: Unsupervised salience learning for person re-identification (CVPR 2013).
+    - title: <a href="https://github.com/Robert0812/salience_match">salience_match</a>
+      year: 2013
+      description: Person re-identification by salience matching (ICCV 2013).
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2022
+      items:
+        - Shenzhen May 1 Labor Medal
+    - year: 2019
+      items:
+        - Wu Wen Jun AI Award for Scientific and Technology Progress
+    - year: 2018
+      items:
+        - Black Sheep Award, SenseTime (1‰ award rate for extraordinary contribution)
+    - year: 2016
+      items:
+        - Peacock Program Talent Award, Shenzhen Municipal Government
+        - Outstanding Reviewer Award, ECCV 2016
+    - year: 2015
+      items:
+        - Doctoral Consortium Award, CVPR 2015
+    - year: 2013
+      items:
+        - Travel Award, ICCV 2013
+
+- title: Research Interests
+  type: nested_list
+  contents:
+    - title: Multimodal Large Language Models
+      items:
+        - Vision-language models and reasoning
+        - Financial LLMs
+    - title: Computer Vision
+      items:
+        - Person re-identification
+        - Saliency detection
+        - Face recognition
+        - Crowd counting
